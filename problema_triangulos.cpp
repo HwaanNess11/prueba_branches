@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 
+//triángulo mirando hacia abajo
 void abajo(int bas, int color)
 {
     int x, esp;
@@ -23,6 +24,8 @@ void abajo(int bas, int color)
     getchar();
     return;
 }
+
+//triángulo mirando hacia arriba
 void arriba(int bas, int color)
 {
     int x, z, esp;
@@ -43,6 +46,8 @@ void arriba(int bas, int color)
     getchar();
     return;
 }
+
+//rombo: triángulo doble
 void rombo(int bas, int color)
 {
 	int x, z, esp;
@@ -83,10 +88,23 @@ void rombo(int bas, int color)
 int main()
 {
 	int opc, base, col;
-	printf("MEN%c DE COLORES:\n  1. Azul\n  2. Verde\n  3. Turquesa\n  4. Rojo\
-    \n  5. Rosa\n  6. Dorado\n  7. Gris Claro\n  8. Gris Oscuro\n  9. Azul brillante\
-    \n  10. Verde brillante\n  11. Turquesa brillante\n  12. Rojo brillante\
-    \n  13. Rosa brillante\n  14. Amarillo\n  15. Blanco\n\n", 233);
+	printf("MEN%c DE COLORES:\n", 233);
+	printf("1. Azul\n");
+	printf("2. Verde\n");
+	printf("3. Turquesa\n");
+	printf("4. Rojo\");
+	printf("5. Rosa\n");
+	printf("6. Dorado\n");
+	printf("7. Gris Claro\n");
+	printf("8. Gris Oscuro\n");
+	printf("9. Azul brillante\");
+	printf("10. Verde brillante\n");
+	printf("11. Turquesa brillante\n");
+	printf("12. Rojo brillante\n");
+	printf("13. Rosa brillante\n");
+	printf("14. Amarillo\n");
+	printf("15. Blanco\n\n");
+
 	while(opc!=4)
 	{
 		base=3;
